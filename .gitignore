@@ -1,0 +1,12 @@
+custom/zsh
+custom/config
+custom/directories
+vim/backups
+vim/view
+vim/bundle
+*un~
+vim/.netrwhist
+vim/tmp
+.netrwhist
+bin/subl
+tags

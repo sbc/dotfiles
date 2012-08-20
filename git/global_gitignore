@@ -1,0 +1,70 @@
+# Save this as ~/.global_gitignore, then:
+# git config --global core.excludesfile ~/.global_gitignore
+
+# OS X/ Linux crap
+Thumbs.db
+.DS_Store
+Icon?
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# Vim/ Text Editor files
+*.un~
+Session.vim
+*.sw[a-z]
+.*.sw[a-z]
+*~
+*.tmproj
+*.tmproject
+tmtags
+
+# Temp files
+.sass-cache
+tmp/
+
+# RVM config files
+.rvmrc
+.rvmrc.*
+
+# Built gems
+*.gem
+
+# Capybara's save_and_open_page
+capybara-*.html
+
+#Subversion
+.svn/
+
+### SASS Ignores - "Sassy CSS" http://sass-lang.com/
+.sass-cache
+
+# Garbage I like to litter around
+
+# It's better to unpack these files and commit the raw source because
+# git has its own built in compression methods.
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.bzip
+*.xz
+*.lzma
+
+#packing-only formats
+*.iso
+*.tar
+
+#package management formats
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+
+# Files I hide for projects

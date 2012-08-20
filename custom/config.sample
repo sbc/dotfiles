@@ -1,0 +1,8 @@
+#PATH
+#example:
+#export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin://usr/local/lib/node:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/pgsql/bin
+#export ARCHFLAGS='-arch x86_64'
+#Editor
+#export EDITOR='mvim'
+#Pager
+#export PAGER=most
