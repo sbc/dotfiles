@@ -13,12 +13,12 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'Shougo/neocomplcache'
 Bundle 'VimEz/ShowMarks'
 Bundle 'austintaylor/vim-indentobject'
+Bundle 'bridgeutopia/snipmate-snippets'
 Bundle 'chrisbra/color_highlight'
 Bundle 'ervandew/supertab'
 Bundle 'garbas/vim-snipmate'
 Bundle 'godlygeek/csapprox'
 Bundle 'godlygeek/tabular'
-Bundle 'honza/snipmate-snippets'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kana/vim-arpeggio'
 Bundle 'kana/vim-textobj-datetime'
@@ -78,6 +78,9 @@ Bundle 'rstacruz/vim-ultisnips-css'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 
+" Erlang
+Bundle 'oscarh/vimerl'
+
 " JS/ node.JS
 Bundle 'briancollins/vim-jst'
 Bundle 'claco/jasmine.vim'
@@ -85,6 +88,10 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'vim-scripts/jQuery'
 Bundle 'vim-scripts/jade.vim'
+
+" Lua
+Bundle 'xolox/vim-lua-ftplugin'
+Bundle 'xolox/vim-lua-inspect'
 
 "R
 Bundle 'vim-scripts/Vim-R-plugin'

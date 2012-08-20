@@ -4,23 +4,36 @@
 
 <strong> This is not the perfect setting. I think that every programmer
 should have different dotfiles and use what works for him/her. Dotfiles usually vary based on languages used
-and tools used everyday apart from personal preferences. This might work well for others who use Ruby,
-Node.JS/ Javascript, HTML5 and C. </strong>
+and tools used everyday apart from personal preferences. This might work well for others who use Ruby, Lua, Javascript, HTML5 and C. </strong>
 
 #Install
 
-<strong> Given homebrew and some dependencies except for vundle is installed.</strong>
+<strong> Given homebrew, git, oh-my-zsh and some dependencies except for vundle is installed.</strong>
 
 	git clone https://github.com/bridgeutopia/dotfiles.git ~/.dotfiles
 
 	rake install #Choose B to create a backup of your previous dotfiles
 	rake cleanup #if you want to remove all the bash files
 
+	#Ignore the unknown function errors
 	#Install vundle
 	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 	mvim .
 	:BundleInstall
+
+	Install the fonts. See fonts ~/.dotfiles/fonts
+
+## Update
+
+	cd  ~/.dotfiles && git pull origin master
+	rake submodules #update some submodules
+	:BundleInstall! #update vundles / vim plugins
+
+
+## Custom config
+
+	~/.dotfiles/custom/directories #aliases for directories
 
 
 # Dependencies
@@ -38,7 +51,7 @@ Node.JS/ Javascript, HTML5 and C. </strong>
 
 ## <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank">oh-my-zsh</a>
 
-<strong> I used to use .bash_profile and it was very cluttered. Now it's pretty much a blank file. I use zsh since it's KLUTZ FRIENDLY and helpful for those who use Git. And I've organized everything into several different files under .dotfiles directory.</strong>
+<strong> I used to use .bash_profile and it was very cluttered. Now it's pretty much a blank file. This is a lot better. And I've organized everything into several different files under .dotfiles directory.</strong>
 
 	curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
@@ -69,13 +82,6 @@ Node.JS/ Javascript, HTML5 and C. </strong>
 	gem install pry-nav
 	gem install awesome_print
 
-
-## Clone this repo on your Dropbox
-
-	git clone git@github.com:bridgeutopia/dotfiles.git
-
-
-
 # Aliases
 
 <strong> There's a lot of aliases (shorter versions of existing commands) <a href="https://github.com/bridgeutopia/dotfiles/blob/master/aliases/aliases" target="_blank">here.</a> Take time to read. </strong>
@@ -84,16 +90,12 @@ Node.JS/ Javascript, HTML5 and C. </strong>
 	ae #edit aliases
 
 
-## Update
-
-	cd  ~/Dropbox/dotfiles && git pull origin master
-
 ## Acknowledgement
 
-This projects is maintained by  <a href="http://blog.bridgeutopiaweb.com" target="_blank">Katherine G. Pe</a></strong>
+This project is maintained by  <a href="http://blog.bridgeutopiaweb.com" target="_blank">Katherine G. Pe</a></strong>
 
 ## Credits & Resources
 
-*   YADR - https://github.com/skwp/dotfiles/
-*   Peepcode Advanced Command line - https://peepcode.com/products/advanced-command-line/
+*   <a href="https://github.com/skwp/dotfiles/" target="_blank">YADR</a>
+*   <a href="https://peepcode.com/products/advanced-command-line/" target="_blank">Peepcode Advanced Command line</a>
 

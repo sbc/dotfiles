@@ -5,7 +5,7 @@ if has("gui_running")
 
   " http://ethanschoonover.com/solarized/vim-colors-solarized
   colorscheme solarized
-  set background=dark
+  set background=light
 
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
   " For some reason this doesn't work as a regular set command,
@@ -15,9 +15,8 @@ if has("gui_running")
   set lines=60
   set columns=190
 
-  set guifont=Inconsolata:h20,Monaco:h17
+  set guifont=Inconsolata:h14,Monaco:h14
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
 endif
-

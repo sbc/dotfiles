@@ -12,6 +12,8 @@ alias -g G='| grep' # now you can do: ls foo G something
 # Utility
 alias ar='source ~/.aliases'
 alias ae='mvim ~/.aliases'
+alias config='mvim ~/.dotfiles/custom/config'
+alias dirs='mvim ~/.dotfiles/custom/directories'
 
 # Common (from Peepcode)
 alias a='ls -A' # -A all except literal . ..
@@ -156,6 +158,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 # Functions
 #
 # (f)ind by (n)ame
-# usage: fn foo 
+# usage: fn foo
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }

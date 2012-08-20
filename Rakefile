@@ -14,7 +14,7 @@ task :cleanup do
 end
 
 desc "Install dotfiles ."
-task :install do
+task :install => [:submodules] do
 
   @oh_my_zsh = "$HOME/.oh-my-zsh"
 
