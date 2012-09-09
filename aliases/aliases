@@ -136,6 +136,12 @@ alias gt='git t'
 #SVN
 alias sa="svn status | grep ''^\?'' | sed -e 's/? *//' | sed -e 's/ /\\ /g' | xargs svn add"
 
+#history
+alias h30="history | awk {'print $2, $3, $4'} | sort | uniq -c | sort -k1 -rn | head -n 30"
+
+#top override
+alias top="htop"
+
 # Finder
 alias o='open . &'
 alias ff='open -a Firefox'
