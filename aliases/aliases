@@ -55,11 +55,6 @@ alias k9='kill -9'
 alias tu='top -o cpu' # cpu
 alias tm='top -o vsize' # memory
 
-# YADR support
-alias yav='yadr vim-add-plugin'
-alias yuv='yadr vim-update-plugins'
-alias yip='yadr init-plugins'
-
 # PS
 alias psa="ps aux"
 alias psg="ps aux | grep "
@@ -75,7 +70,7 @@ alias du='du -h -d 2'
 alias lsg='ll | grep'
 
 # vim using
-alias vim=$(brew ls macvim | grep Contents/MacOS/Vim)
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # vimrc editing
 alias ve='vi ~/.vimrc'
@@ -87,7 +82,7 @@ alias zr='source ~/.zshrc'
 # Git Aliases
 alias gs='git status'
 alias gstsh='git stash'
-alias gst='git stash'
+alias gst='git status'
 alias gsh='git show'
 alias gshw='git show'
 alias gshow='git show'
@@ -135,6 +130,14 @@ alias gt='git t'
 
 #SVN
 alias sa="svn status | grep ''^\?'' | sed -e 's/? *//' | sed -e 's/ /\\ /g' | xargs svn add"
+alias sup="svn up"
+alias sst="svn st"
+alias sci="svn ci"
+alias sco="svn co"
+
+# Hg
+alias hgst="hg st"
+alias hgci="hg ci"
 
 #history
 alias h30="history | awk {'print $2, $3, $4'} | sort | uniq -c | sort -k1 -rn | head -n 30"
@@ -167,3 +170,23 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 # usage: fn foo
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }
+
+# Misc migrated over from old .bashrc
+alias wget="curl -O"
+alias cpwd='pwd|xargs echo -n|pbcopy'
+alias free="free -m"
+alias who="who | sort"
+alias hgrep="history | grep"
+
+# Postgres
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# Virtualenv
+alias mkv="mkvirtualenv --no-site-packages --distribute"
+alias cdv="cdvirtualenv"
+alias rmv="rmvirtualenv"
+alias lsv="lsvirtualenv"
+alias cpv="cpvirtualenv"
+alias cdsp="cdsitepackages"
+alias lssp="lssitepackages"
