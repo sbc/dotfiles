@@ -69,9 +69,6 @@ alias du='du -h -d 2'
 # show me files matching "ls grep"
 alias lsg='ll | grep'
 
-# vim using
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-
 # vimrc editing
 alias ve='vi ~/.vimrc'
 

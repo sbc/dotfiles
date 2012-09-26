@@ -43,7 +43,7 @@ elseif has('gui_macvim')
   " MacVim
 
   "set guifont=Menlo\ Regular:h12
-  set guifont=Droid\ Sans\ Mono:h14
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
 
   set wildignore+=*/tmp/*,*/.git/*,*/.hg/*,*/.svn/*,*.swp,*.png,*.gif,*.jpg   " for Linux/MacOSX
 
@@ -113,36 +113,4 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 " -----------------------------
 
 "" Plugins Keys
-nnoremap <silent><D-t> :CtrlP<CR>
 nnoremap <silent><C-a> :Ack
-
-"" NERDTree
-if has("gui_macvim") && has("gui_running")
-  :map <D-\> :NERDTreeToggle<CR>
-  :imap <D-\> <Esc>:NERDTreeToggle<CR>i
-else
-  :map <leader>\ :NERDTreeToggle<CR>
-  :imap <leader>\ <Esc>:NERDTreeToggle<CR>i
-endif
-
-"" NERDCommenter
-if has("gui_macvim") && has("gui_running")
-  :map <D-/> <plug>NERDCommenterToggle<CR>
-  :imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-else
-  :map <leader>/ <plug>NERDCommenterToggle<CR>
-  :imap <leader>/ <Esc><plug>NERDCommenterToggle<CR>i
-endif
-
-"" ControlP
-let g:ctrlp_map = '<D-t>'
-"let g:ctrlp_custom_ignore = '\.git/*\|\.hg/*\|\.svn/*\|tmp/*\|public/assets/*\|*\.png\|*\.gif\|*\.jpg'
-let g:ctrlp_use_caching = 0
-let g:ctrlp_mruf_exclude = 'tmp/.*\|temp/.*\|.*swp' " MacOSX/Linux
-let g:ctrlp_dotfiles = 0
-
-
-"" Powerline
-set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
-let g:Powerline_symbols = 'fancy'
-
