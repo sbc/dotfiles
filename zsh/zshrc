@@ -8,7 +8,8 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
-  plugins=(vi-mode rvm ruby bundler zsh-syntax-highlighting history-substring-search)
+#  plugins=(vi-mode rvm ruby bundler zsh-syntax-highlighting history-substring-search)
+  plugins=(vi-mode sh-syntax-highlighting history-substring-search)
 
   # source every zsh file in user's custom/zsh/before. This is useful for setting theme and plugins.
   if [[ -d ~/.dotfiles/custom/zsh/before ]]; then
