@@ -30,7 +30,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'austintaylor/vim-indentobject'
-Bundle 'briandoll/change-inside-surroundings'
+Bundle 'briandoll/change-inside-surroundings.vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/snipmate-snippets"
@@ -66,7 +66,7 @@ Bundle 'leshill/vim-json'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'itspriddle/vim-jquery'
-Bundle 'claco/jasmine'
+Bundle 'claco/jasmine.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'kogakure/vim-sparkup'
 Bundle 'scrooloose/syntastic'
