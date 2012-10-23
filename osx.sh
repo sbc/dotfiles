@@ -179,8 +179,11 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Finder                                                                      #
 ###############################################################################
 
-# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+# Finder: allow quitting via ⌘ + Q
 defaults write com.apple.finder QuitMenuItem -bool true
+
+# Finder: hide desktop icons
+defaults write com.apple.finder CreateDesktop -bool false
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
@@ -274,7 +277,7 @@ unset file
 defaults write com.apple.dock mouse-over-hilte-stack -bool true
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 72
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -468,6 +471,9 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 
+# Make system print dialog respond to cmd-P
+defaults write com.google.Chrome NSUserKeyEquivalents -dict-add "Print Using System Dialog..." "@p" "Print..." "~@p"
+
 ###############################################################################
 # SizeUp.app                                                                  #
 ###############################################################################
@@ -521,6 +527,13 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
+
+###############################################################################
+# Vim                                                                         #
+###############################################################################
+
+# hide vim after closing last window
+defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 1
 
 ###############################################################################
 # Kill affected applications                                                  #
