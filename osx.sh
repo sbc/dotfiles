@@ -471,9 +471,6 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 
-# Make system print dialog respond to cmd-P
-defaults write com.google.Chrome NSUserKeyEquivalents -dict-add "Print Using System Dialog..." "@p" "Print..." "~@p"
-
 ###############################################################################
 # SizeUp.app                                                                  #
 ###############################################################################
