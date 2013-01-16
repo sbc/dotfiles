@@ -169,7 +169,7 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 function fn() { ls **/*$1* }
 
 # Misc migrated over from old .bashrc
-alias wget="curl -O"
+#alias wget="curl -O"
 alias cpwd='pwd|xargs echo -n|pbcopy'
 alias free="free -m"
 alias who="who | sort"
