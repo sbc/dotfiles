@@ -32,6 +32,7 @@ task :install => [:submodules] do
   linkables += Dir.glob('zsh/zshrc') if want_to_install?('zsh')
   linkables += Dir.glob('aliases/*') if want_to_install?('aliases for git and other stuff')
   linkables += Dir.glob('vimify/*') if want_to_install?('vimification of mysql/irb/command line')
+  linkables += Dir.glob('slate') if want_to_install?('slate')
 
   Rake::Task['zsh_themes'].invoke
 
