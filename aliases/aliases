@@ -187,3 +187,6 @@ alias lsv="lsvirtualenv"
 alias cpv="cpvirtualenv"
 alias cdsp="cdsitepackages"
 alias lssp="lssitepackages"
+
+# Misc
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"

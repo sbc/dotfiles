@@ -1,11 +1,11 @@
 config defaultToCurrentScreen true
 # Shows app icons and background apps, spreads icons in the same place.
-config windowHintsShowIcons true
-config windowHintsIgnoreHiddenWindows false
-config windowHintsSpread true
-config windowHintsDuration 5
+#config windowHintsShowIcons true
+#config windowHintsIgnoreHiddenWindows false
+#config windowHintsSpread true
+#config windowHintsDuration 5
 
-bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
+#bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
 
 # Abstract positions
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY

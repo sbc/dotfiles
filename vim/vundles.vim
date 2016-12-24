@@ -1,5 +1,5 @@
 " let Vundle manage Vundle, required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " --------------
 " Plugin Bundles
@@ -8,7 +8,6 @@ Bundle 'gmarik/vundle'
 Bundle 'kana/vim-arpeggio'
 Bundle 'kana/vim-textobj-datetime'
 Bundle 'kana/vim-textobj-entire'
-Bundle 'kana/vim-textobj-function'
 Bundle 'kana/vim-textobj-function'
 Bundle 'kana/vim-textobj-user'
 
@@ -33,8 +32,8 @@ Bundle 'austintaylor/vim-indentobject'
 Bundle 'briandoll/change-inside-surroundings.vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle "SirVer/ultisnips"
 Bundle 'godlygeek/tabular'
 Bundle 'gregsexton/gitv'
 Bundle 'mutewinter/taskpaper.vim'
@@ -68,7 +67,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'claco/jasmine.vim'
 Bundle 'groenewege/vim-less'
-Bundle 'kogakure/vim-sparkup'
+Bundle 'rstacruz/vim-sparkup'
 Bundle 'scrooloose/syntastic'
 
 " Powerline
