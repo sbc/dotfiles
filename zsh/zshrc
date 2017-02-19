@@ -82,3 +82,7 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export PATH=$PATH:/Users/sbc/.rvm/rubies/ruby-1.9.2-p290/bin:
 
 #/usr/bin:/bin:/usr/sbin:/sbin
+
+stty stop undef
+stty start undef
+stty -ixon

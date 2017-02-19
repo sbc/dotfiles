@@ -2,28 +2,36 @@
 " Vundle
 " ----------------------------------------
 
-set nocompatible
-filetype off                    " required by vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-if has("user_commands")
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
-endif
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Load 'vundles'
+source ~/.vim/vundles.vim
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-"
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-
-filetype plugin indent on  " Automatically detect file types. (must turn on after Vundle)
+" Put your non-Plugin stuff after this line
 
 " ----------------------------------------
 " Platform Specific Configuration
@@ -43,7 +51,8 @@ elseif has('gui_macvim')
   " MacVim
 
   "set guifont=Menlo\ Regular:h12
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
+"  set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
+  set guifont=DroidSansMonoForPowerline\ Nerd\ Font\ Book:h14
 
   set wildignore+=*/tmp/*,*/.git/*,*/.hg/*,*/.svn/*,*.swp,*.png,*.gif,*.jpg   " for Linux/MacOSX
 
@@ -91,7 +100,7 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Color
 " set background=dark
-colorscheme Tomorrow-Night
+colorscheme base16-default-dark
 
 "" No Bells/Flashes
 set noerrorbells visualbell t_vb=
@@ -114,3 +123,6 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 "" Plugins Keys
 nnoremap <silent><C-a> :Ack
+
+"" See also files in ~/.vim/plugin/settins
+
