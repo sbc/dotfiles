@@ -71,6 +71,9 @@ alias lsg='ll | grep'
 # vimrc editing
 alias ve='vi ~/.vimrc'
 
+# Vundles
+alias vu='vim ~/.dotfiles/vim/vundles.vim'
+
 # zsh profile editing
 alias ze='vi ~/.zshrc'
 alias zr='source ~/.zshrc'
