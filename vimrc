@@ -106,11 +106,8 @@ set number
 
 "" Color
 "set background=dark
-
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+let base16colorspace=256
+colorscheme base16-solarized-dark
 
 "" No Bells/Flashes
 set noerrorbells visualbell t_vb=
