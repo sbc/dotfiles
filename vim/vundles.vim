@@ -10,7 +10,7 @@ Plugin 'kana/vim-textobj-user'
 
 " Navigation
 "Plugin 'wincent/Command-T'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sjbach/lusty'
