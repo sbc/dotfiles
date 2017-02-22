@@ -51,8 +51,10 @@ elseif has('gui_macvim')
   " MacVim
 
   "set guifont=Menlo\ Regular:h12
-"  set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
-  set guifont=DroidSansMonoForPowerline\ Nerd\ Font\ Book:h14
+  "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
+  "set guifont=Droid\ Sans\ Mono\ For\ Powerline\ Nerd\ Font\ Complete:h14
+  set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h14
+
 
   set wildignore+=*/tmp/*,*/.git/*,*/.hg/*,*/.svn/*,*.swp,*.png,*.gif,*.jpg   " for Linux/MacOSX
 
@@ -99,8 +101,12 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 "" Color
-" set background=dark
-colorscheme base16-default-dark
+"set background=dark
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 "" No Bells/Flashes
 set noerrorbells visualbell t_vb=
