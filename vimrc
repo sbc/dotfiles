@@ -100,6 +100,10 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+"" Line numbers (hybrid mode)
+set relativenumber
+set number
+
 "" Color
 "set background=dark
 
