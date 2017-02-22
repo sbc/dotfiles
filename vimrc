@@ -53,7 +53,7 @@ elseif has('gui_macvim')
   "set guifont=Menlo\ Regular:h12
   "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
   "set guifont=Droid\ Sans\ Mono\ For\ Powerline\ Nerd\ Font\ Complete:h14
-  set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h14
+  set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h15
 
 
   set wildignore+=*/tmp/*,*/.git/*,*/.hg/*,*/.svn/*,*.swp,*.png,*.gif,*.jpg   " for Linux/MacOSX
