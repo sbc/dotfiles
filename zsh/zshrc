@@ -6,11 +6,12 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
   # Set name of the theme to load.
   POWERLEVEL9K_MODE='awesome-fontconfig'
   ZSH_THEME="powerlevel9k/powerlevel9k"
+  DEFAULT_USER="sbc"
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
 #  plugins=(vi-mode rvm ruby bundler zsh-syntax-highlighting history-substring-search)
-  plugins=(git python vi-mode sh-syntax-highlighting history-substring-search)
+  plugins=(git python vi-mode sh-syntax-highlighting history-substring-search pyenv)
 
   # source every zsh file in user's custom/zsh/before. This is useful for setting theme and plugins.
   if [[ -d ~/.dotfiles/custom/zsh/before ]]; then
@@ -56,7 +57,8 @@ if [[ -a ~/.dotfiles/custom/directories ]]; then
   source ~/.dotfiles/custom/directories
 fi
 
-export PATH=/usr/local/bin:/usr/local/sbin:${PATH}:$HOME/bin
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}:$HOME/bin"
+export PATH="/usr/local/php5/bin:${PATH}"
 export PATH="/usr/local/share/python:${PATH}"
 
 export PYENV_ROOT="$HOME/.pyenv"
@@ -92,3 +94,10 @@ stty -ixon
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sbc/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sbc/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sbc/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sbc/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/opt/openssl/bin:$PATH"
