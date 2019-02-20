@@ -4,14 +4,18 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
   ZSH=$HOME/.oh-my-zsh
 
   # Set name of the theme to load.
-  POWERLEVEL9K_MODE='awesome-fontconfig'
   ZSH_THEME="powerlevel9k/powerlevel9k"
+  POWERLEVEL9K_MODE='awesome-fontconfig'
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs pyenv)
+  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+  POWERLEVEL9K_PYTHON_ICON='\uf81f'
+
   DEFAULT_USER="sbc"
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
 #  plugins=(vi-mode rvm ruby bundler zsh-syntax-highlighting history-substring-search)
-  plugins=(git python vi-mode sh-syntax-highlighting history-substring-search pyenv)
+  plugins=(git python vi-mode sh-syntax-highlighting history-substring-search wp-cli pyenv)
 
   # source every zsh file in user's custom/zsh/before. This is useful for setting theme and plugins.
   if [[ -d ~/.dotfiles/custom/zsh/before ]]; then
