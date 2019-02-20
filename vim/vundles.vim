@@ -19,7 +19,7 @@ Plugin 'easymotion/vim-easymotion'
 " Commands
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'briandoll/change-inside-surroundings.vim'
+"Plugin 'briandoll/change-inside-surroundings.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
@@ -36,6 +36,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'gregsexton/gitv'
 "Plugin 'mutewinter/taskpaper.vim'
 Plugin 'majutsushi/tagbar'
+"Plugin 'lukhio/vim-mapping-conflicts'
 
 " UI
 "Plugin 'chriskempson/vim-tomorrow-theme'

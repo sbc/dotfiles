@@ -124,6 +124,9 @@ autocmd GUIEnter * set visualbell t_vb=
 let mapleader = ","
 " Map jj to Esc, but don't move cursor
 :imap jj <Esc>`^
+" Move between buffers with CTRL
+map <C-j> :bnext<CR>
+map <C-k> :bprev<CR>
 
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -137,6 +140,9 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 "" Plugins Keys
 nnoremap <silent><C-a> :Ack
+
+"" Ignore long lines python mode
+let g:pymode_lint_ignore="E501"
 
 "" See also files in ~/.vim/plugin/settins
 
