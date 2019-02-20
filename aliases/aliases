@@ -193,3 +193,10 @@ alias lssp="lssitepackages"
 # file & pattern search
 function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
+
+# Misc functions
+
+# Quickly creating your test/train data directory:
+#mkdatadirs() {for class in "$@"; do mkdir $class; mkdir -- "$class"/{train,valid}; done; }
+mkdatadirs() { for class in "$@"; do mkdir -p train valid; mkdir -p -- {train,valid}/"$class"; done; }
+# Usage: mkdatadirs class1 class2 class3 …
